@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap');
 
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #FF577F;
+    --cor-quatenaria: #B9B9B9;
     --cor-hover: #272727;
 
-    --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-primaria: 'Lato', sans-serif;
+    --fonte-secundaria: 'Lato', sans-serif;
 }
 *{
     margin: 0;
@@ -37,7 +45,7 @@ body {
     padding: 10px;
 }
 .cabecalho__menu__link {
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
@@ -114,7 +122,7 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-primaria);
 }
 
 .apresentacao__links {
@@ -144,7 +152,7 @@ body {
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-primaria);
 }
 
 .apresentacao__links__navegacao:hover {
@@ -153,18 +161,23 @@ body {
 
 .rodape {
     width: auto;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
+    color: var(--cor-quartenaria);
+    /*background-color: var(--cor-terciaria);*/
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 400;
+    border: 2px solid var(--cor-terciaria);
 }
 .logo__alura{
-    width: 5%;
+    width: 30%;
+    padding: 25px;
 }
-
+.assinatura__rodape{
+    
+    font-family: var(--fonte-primaria);
+}
 /* Media query para dispositivos móveis */
 @media (max-width: 768px) {
     .cabecalho {
