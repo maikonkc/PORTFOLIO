@@ -168,7 +168,7 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.2rem;
     font-weight: 400;
-    border: 2px solid var(--cor-terciaria);
+    border-top: 2px solid var(--cor-terciaria);
 }
 .logo__alura{
     width: 10%;
